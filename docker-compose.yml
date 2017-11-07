@@ -7,6 +7,15 @@ services:
       - MESSAGE=Hai Kamu, iya kamu
       - PORT=3004
      ports:
-      - "3004:3004"
+      - "3090:3004"
      mem_limit: 200M
 
+   my_node_app_2:
+     image: registry.nextflow.tech/my-node:syukur
+     container_name: my_node_app_2
+     environment:
+      - MESSAGE=coba
+      - PORT=3004
+     ports:
+      - "3091:3004"
+     mem_limit: 200M
